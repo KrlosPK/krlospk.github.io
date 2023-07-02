@@ -15,6 +15,10 @@ Carlos Morales personal portfolio made with Angular & Tailwind
 
 Run `ng serve` or `npm start` for a dev server. Then go to `https://localhost:4200`.
 
+## Build
+
+Run `ng build` to compile the production code, then run `npm run build:github` to create the `docs` file for Github Pages. Finally, commit the `docs` folder to finish the build.
+
 ## Contributions
 
 ¡Feel free to made a new [issue](https://github.com/KrlosPK/krlospk.github.io/issues/new)!
