@@ -1,7 +1,37 @@
-<header class="px-4 mx-auto max-w-7xl">
+<header
+  class="fixed top-0 w-full bg-custom-200 backdrop-blur-lg bg-opacity-10"
+  (clickOutside)="clickedOutside()"
+>
   <nav>
-    <ul>
-      <li><a href="#footer">footer</a></li>
+    <!-- ! Desktop Nav -->
+    <ul class="hidden gap-4 p-4 mx-auto md:flex max-w-7xl">
+      <li>Carlos Dev</li>
+      <shared-nav-item href="#projects" text="Proyectos" class="ml-auto" />
+      <shared-nav-item href="#about-me" text="Sobre mí" />
+      <shared-nav-item href="#education" text="Educación" />
+      <shared-nav-item href="#skills" text="Habilidades" />
+      <shared-nav-item href="#contact-me" text="Contacto" />
+    </ul>
+
+    <!-- ! Responsive Nav -->
+    <ul class="relative flex items-center p-4 md:hidden">
+      <li>
+        <a routerLink="/"> Carlos Dev </a>
+      </li>
+
+      <li class="ml-auto select-none">
+        <button (click)="toggle()">
+          <img
+            width="36"
+            height="36"
+            class="transition-transform hover:scale-[1.05]"
+            src="./assets/images/bars.svg"
+            alt="navbar button"
+          />
+        </button>
+      </li>
+
+      <shared-responsive-navbar [isCollapsed]="isResponsiveNav" />
     </ul>
   </nav>
 </header>
