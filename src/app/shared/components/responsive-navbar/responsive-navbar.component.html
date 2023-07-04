@@ -1,0 +1,14 @@
+<nav
+  class="absolute z-50 w-full -translate-x-1/2 top-full left-1/2"
+  *ngIf="isCollapsed"
+>
+  <ul
+    class="flex flex-col font-semibold text-center border-2 rounded-md bg-custom-50 border-custom-400"
+  >
+    <shared-nav-item (click)="collapse()" href="#projects" text="Proyectos" />
+    <shared-nav-item (click)="collapse()" href="#about-me" text="Sobre mí" />
+    <shared-nav-item (click)="collapse()" href="#education" text="Educación" />
+    <shared-nav-item (click)="collapse()" href="#skills" text="Habilidades" />
+    <shared-nav-item (click)="collapse()" href="#contact-me" text="Contacto" />
+  </ul>
+</nav>
