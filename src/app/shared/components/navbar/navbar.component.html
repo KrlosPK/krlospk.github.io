@@ -1,10 +1,10 @@
 <header
-  class="fixed top-0 z-10 w-full bg-custom-200 backdrop-blur-lg bg-opacity-10"
+  class="absolute top-0 z-10 w-full transition-all bg-custom-200 backdrop-blur-lg bg-opacity-10"
   (clickOutside)="clickedOutside()"
 >
   <nav>
     <!-- ! Desktop Nav -->
-    <ul class="items-center hidden gap-4 p-4 mx-auto md:flex max-w-7xl">
+    <ul class="items-center hidden gap-4 p-2 mx-auto md:flex max-w-7xl">
       <li>Carlos Dev</li>
       <shared-nav-item href="#projects" text="Proyectos" class="ml-auto" />
       <shared-nav-item href="#about-me" text="Sobre mí" />
@@ -14,7 +14,7 @@
     </ul>
 
     <!-- ! Responsive Nav -->
-    <ul class="relative flex items-center p-4 md:hidden">
+    <ul class="relative flex items-center p-2 md:hidden">
       <li>
         <a routerLink="/"> Carlos Dev </a>
       </li>
@@ -31,7 +31,10 @@
         </button>
       </li>
 
-      <shared-responsive-navbar [isCollapsed]="isResponsiveNav" />
+      <shared-responsive-navbar
+        (isCollapsedChange)="handleCollapsedChange($event)"
+        [isCollapsed]="isResponsiveNav"
+      />
     </ul>
   </nav>
 </header>
