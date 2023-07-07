@@ -11,12 +11,11 @@ export class NavbarItemComponent {
   @Input()
   public text: string = '';
   @Input()
-  public tabindex: boolean = false;
+  public tabindex: boolean = true;
   @Output()
   public isCollapsed: EventEmitter<boolean> = new EventEmitter();
 
   public handleClick(): void {
-    console.log(this.tabindex);
     this.isCollapsed.emit(false);
   }
 }
