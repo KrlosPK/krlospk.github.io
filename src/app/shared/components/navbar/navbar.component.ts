@@ -6,7 +6,7 @@ import { Component, HostListener } from '@angular/core';
   styles: [
     `
       .fixed {
-        box-shadow: #c0fdfba1 0px 1px 10px 0px;
+        box-shadow: #f7ffffa1 0px 1px 10px 0px;
         position: fixed;
       }
     `,

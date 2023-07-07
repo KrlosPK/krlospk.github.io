@@ -1,8 +1,9 @@
 <li>
   <a
     (click)="handleClick()"
-    class="block py-4 select-none md:transition-colors md:hover:bg-transparent md:hover:text-custom-400 hover:bg-custom-200 hover:text-black"
     [href]="href"
+    [tabindex]="tabindex ? null : -1"
+    class="block py-4 select-none md:transition-colors md:hover:bg-transparent md:hover:text-custom-400 hover:bg-custom-200 hover:text-black"
     >{{ text }}</a
   >
 </li>

@@ -10,10 +10,13 @@ export class NavbarItemComponent {
   public href: string = '';
   @Input()
   public text: string = '';
+  @Input()
+  public tabindex: boolean = false;
   @Output()
   public isCollapsed: EventEmitter<boolean> = new EventEmitter();
 
   public handleClick(): void {
+    console.log(this.tabindex);
     this.isCollapsed.emit(false);
   }
 }
