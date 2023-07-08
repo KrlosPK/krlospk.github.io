@@ -6,6 +6,7 @@ import { ClickOutsideDirective } from './directives/click-outside.directive';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarItemComponent } from './components/navbar-item/navbar-item.component';
 import { ResponsiveNavbarComponent } from './components/responsive-navbar/responsive-navbar.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,9 @@ import { ResponsiveNavbarComponent } from './components/responsive-navbar/respon
     NavbarComponent,
     NavbarItemComponent,
     ResponsiveNavbarComponent,
+    ButtonComponent,
   ],
   imports: [CommonModule],
-  exports: [NavbarComponent],
+  exports: [NavbarComponent, ButtonComponent],
 })
 export class SharedModule {}

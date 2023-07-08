@@ -1,1 +1,60 @@
-<section>Home works</section>
+<section
+  class="relative grid items-center grid-cols-1 gap-6 pt-3 pb-24 text-center justify-items-center md:justify-items-start md:text-left md:grid-cols-[3fr_1fr]"
+>
+  <article class="flex flex-col gap-2">
+    <h1
+      id="name"
+      class="mb-1 text-4xl font-bold text-transparent md:text-5xl font-poppins bg-clip-text"
+    >
+      Hola, soy Carlos Morales.
+    </h1>
+    <h2 class="mb-5 text-3xl font-bold md:text-4xl">
+      Desarrollador Web Frontend
+    </h2>
+    <p class="max-w-[69ch]">
+      Enfocado en el desarrollo Frontend y la experiencia de usuario. +2 años de
+      experiencia desarrollando webs con
+      <span class="text-red-400 transition-colors hover:text-red-500"
+        >Angular</span
+      >
+      y
+      <span class="transition-colors text-cyan-300 hover:text-cyan-400"
+        >React</span
+      >
+    </p>
+
+    <p class="max-w-[69ch] mb-5">
+      Si estás en busca de alguien creativo, proactivo y apto para tomar
+      decisiones autónomamente <strong>¡estás en el lugar correcto</strong>!
+    </p>
+
+    <!-- ! Social Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 md:justify-start">
+      <shared-button
+        *ngFor="let link of links"
+        [alt]="link.alt"
+        [href]="link.href"
+        [img]="link.img"
+        [styles]="link.styles"
+        [text]="link.text"
+      />
+    </div>
+  </article>
+
+  <article class="-order-1 md:order-1">
+    <img
+      alt="Foto de Carlos Morales"
+      class="invert"
+      src="./assets/images/github.svg"
+      width="320"
+    />
+  </article>
+
+  <img
+    class="absolute bottom-2 left-1/2 -translate-1/2 animate-[bounce_1.5s_infinite]"
+    src="./assets/images/arrow_down.svg"
+    alt="arrow down"
+    width="32"
+    id="arrow_down"
+  />
+</section>

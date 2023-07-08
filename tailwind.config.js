@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     fontFamily: {
-      sans: ["ui-sans-serif", "sans-serif"],
+      sans: ["sans-serif"],
     },
     extend: {
       colors: {
@@ -13,6 +13,8 @@ module.exports = {
         "custom-300": "#0C6291",
         "custom-400": "#C0FDFB",
         "custom-500": "#F7FFFF",
+        "custom-600": "#054c72",
+        "custom-700": "#816985",
       },
     },
   },
