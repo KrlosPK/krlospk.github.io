@@ -1,16 +1,17 @@
 {
   "name": "personal-portfolio",
-  "version": "0.2.3",
+  "version": "0.4.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist",
+    "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist && npm run copy:assets",
     "build:href": "ng build --base-href ./",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "delete:docs": "del docs",
-    "copy:dist": "copyfiles dist/personal-portfolio/* ./docs -f"
+    "copy:dist": "copyfiles dist/personal-portfolio/* ./docs -f",
+    "copy:assets": "copyfiles dist/personal-portfolio/assets/* ./docs/assets -f"
   },
   "private": true,
   "dependencies": {

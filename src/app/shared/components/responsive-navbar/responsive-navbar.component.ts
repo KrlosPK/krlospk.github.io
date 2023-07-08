@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'shared-responsive-navbar',
@@ -8,8 +8,11 @@ import { Component, Input } from '@angular/core';
 export class ResponsiveNavbarComponent {
   @Input()
   public isCollapsed: boolean = false;
+  @Output()
+  public isCollapsedChange: EventEmitter<boolean> = new EventEmitter();
 
-  collapse(): void {
-    this.isCollapsed = !this.isCollapsed;
+  handleCollapse(event: boolean): void {
+    this.isCollapsed = event;
+    this.isCollapsedChange.emit(event);
   }
 }
