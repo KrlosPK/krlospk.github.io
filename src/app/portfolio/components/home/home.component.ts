@@ -8,7 +8,7 @@ import { Link } from '../../types/home.types';
   styles: [
     `
       #name {
-        background-image: linear-gradient(to left, #6190E8 40%, #ffc888);
+        background-image: linear-gradient(to left, #f12711e1, #f5af19);
       }
       @media screen and (min-width: 768px) {
         #arrow_down {
@@ -38,8 +38,7 @@ export class HomeComponent {
       alt: 'Logo de LinkedIn',
       href: 'https://github.com/KrlosPK',
       img: './assets/images/github.svg',
-      styles:
-        'bg-gray-700 [&>img]:invert hover:bg-gray-800',
+      styles: 'bg-gray-700 [&>img]:invert hover:bg-gray-800',
       text: 'GitHub',
     },
   ];
