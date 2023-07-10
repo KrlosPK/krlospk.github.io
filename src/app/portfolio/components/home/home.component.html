@@ -4,7 +4,7 @@
   <article class="flex flex-col gap-2">
     <h1
       id="name"
-      class="mb-1 text-4xl font-bold text-transparent md:text-5xl font-poppins bg-clip-text"
+      class="mb-1 text-4xl font-bold text-transparent bg-[linear-gradient(to_left,#f12711,#f5af19)] bg-clip-text md:text-5xl"
     >
       Hola, soy Carlos Morales.
     </h1>
@@ -28,17 +28,7 @@
       decisiones autónomamente <strong>¡estás en el lugar correcto</strong>!
     </p>
 
-    <!-- ! Social Buttons -->
-    <div class="flex flex-wrap justify-center gap-3 md:justify-start">
-      <shared-button
-        *ngFor="let link of links"
-        [alt]="link.alt"
-        [href]="link.href"
-        [img]="link.img"
-        [styles]="link.styles"
-        [text]="link.text"
-      />
-    </div>
+    <shared-buttons />
   </article>
 
   <article class="-order-1 md:order-1">
@@ -51,7 +41,7 @@
   </article>
 
   <img
-    class="absolute bottom-2 left-1/2 -translate-1/2 animate-[bounce_1.5s_infinite]"
+    class="absolute bottom-2 left-1/2 md:w-10 -translate-1/2 animate-[bounce_1.5s_infinite]"
     src="./assets/images/arrow_down.svg"
     alt="arrow down"
     width="32"

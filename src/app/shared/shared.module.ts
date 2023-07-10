@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarItemComponent } from './components/navbar-item/navbar-item.component';
 import { ResponsiveNavbarComponent } from './components/responsive-navbar/responsive-navbar.component';
 import { ButtonComponent } from './components/button/button.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { ButtonComponent } from './components/button/button.component';
     NavbarItemComponent,
     ResponsiveNavbarComponent,
     ButtonComponent,
+    ButtonsComponent,
   ],
   imports: [CommonModule],
-  exports: [NavbarComponent, ButtonComponent],
+  exports: [NavbarComponent, ButtonsComponent],
 })
 export class SharedModule {}
