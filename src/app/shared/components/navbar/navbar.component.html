@@ -30,10 +30,12 @@
         </button>
       </li>
 
-      <shared-responsive-navbar
-        (isCollapsedChange)="handleCollapsedChange($event)"
-        [isCollapsed]="isResponsiveNav"
-      />
+      <li>
+        <shared-responsive-navbar
+          (isCollapsedChange)="handleCollapsedChange($event)"
+          [isCollapsed]="isResponsiveNav"
+        />
+      </li>
     </ul>
   </nav>
 </header>
