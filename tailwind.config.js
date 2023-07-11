@@ -15,6 +15,8 @@ module.exports = {
         "custom-500": "#F7FFFF",
         "custom-600": "#054c72",
         "custom-700": "#75467c",
+        "gradient-1": "#124591",
+        "gradient-2": "#0066FF",
       },
     },
   },

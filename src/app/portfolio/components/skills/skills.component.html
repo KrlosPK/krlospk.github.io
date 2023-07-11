@@ -1,4 +1,4 @@
-<section class="py-16">
+<section class="py-10">
   <h2 class="mb-10 text-4xl font-bold text-center">Habilidades</h2>
 
   <ul
@@ -10,11 +10,12 @@
       class="grid grid-cols-1 gap-2 font-bold text-center [&>img]:hover:scale-110 justify-items-center"
     >
       <img
-        width="64"
+        [alt]="skill.alt"
+        [src]="skill.img"
         class="transition-transform duration-300"
         height="64"
-        [src]="skill.img"
-        [alt]="skill.alt"
+        loading="lazy"
+        width="64"
       />
       {{ skill.label }}
     </li>
