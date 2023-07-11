@@ -7,6 +7,8 @@ import Aos from 'aos';
 })
 export class AppComponent {
   constructor() {
-    Aos.init();
+    Aos.init({
+      duration: 700,
+    });
   }
 }

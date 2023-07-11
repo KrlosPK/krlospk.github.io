@@ -1,1 +1,23 @@
-<p>skills works!</p>
+<section class="py-10">
+  <h2 class="mb-10 text-4xl font-bold text-center">Habilidades</h2>
+
+  <ul
+    class="grid max-w-2xl grid-cols-1 gap-4 mx-auto md:grid-cols-2 lg:grid-cols-4 justify-items-center lg:max-w-full"
+    data-aos="fade-right"
+  >
+    <li
+      *ngFor="let skill of skills"
+      class="grid grid-cols-1 gap-2 font-bold text-center [&>img]:hover:scale-110 justify-items-center"
+    >
+      <img
+        [alt]="skill.alt"
+        [src]="skill.img"
+        class="transition-transform duration-300"
+        height="64"
+        loading="lazy"
+        width="64"
+      />
+      {{ skill.label }}
+    </li>
+  </ul>
+</section>
