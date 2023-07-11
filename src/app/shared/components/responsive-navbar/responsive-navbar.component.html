@@ -6,29 +6,37 @@
   <ul
     class="flex flex-col font-semibold text-center border-2 rounded-md bg-custom-50 border-custom-400"
   >
-    <shared-nav-item
-      (isCollapsed)="handleCollapse($event)"
-      [tabindex]="isCollapsed"
-      href="#projects"
-      text="Proyectos"
-    />
-    <shared-nav-item
-      (isCollapsed)="handleCollapse($event)"
-      [tabindex]="isCollapsed"
-      href="#education"
-      text="Educación"
-    />
-    <shared-nav-item
-      (isCollapsed)="handleCollapse($event)"
-      [tabindex]="isCollapsed"
-      href="#skills"
-      text="Habilidades"
-    />
-    <shared-nav-item
-      (isCollapsed)="handleCollapse($event)"
-      [tabindex]="isCollapsed"
-      href="#contact-me"
-      text="Contacto"
-    />
+    <li>
+      <shared-nav-item
+        (isCollapsed)="handleCollapse($event)"
+        [tabindex]="isCollapsed"
+        href="#projects"
+        text="Proyectos"
+      />
+    </li>
+    <li>
+      <shared-nav-item
+        (isCollapsed)="handleCollapse($event)"
+        [tabindex]="isCollapsed"
+        href="#education"
+        text="Educación"
+      />
+    </li>
+    <li>
+      <shared-nav-item
+        (isCollapsed)="handleCollapse($event)"
+        [tabindex]="isCollapsed"
+        href="#skills"
+        text="Habilidades"
+      />
+    </li>
+    <li>
+      <shared-nav-item
+        (isCollapsed)="handleCollapse($event)"
+        [tabindex]="isCollapsed"
+        href="#contact-me"
+        text="Contacto"
+      />
+    </li>
   </ul>
 </nav>
