@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Link } from 'src/app/shared/types/shared.types';
+import { type Link } from 'src/app/shared/types/types.d';
 
 @Component({
   selector: 'shared-buttons',
