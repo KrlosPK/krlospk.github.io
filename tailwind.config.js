@@ -3,7 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     fontFamily: {
-      sans: ["sans-serif"],
+      sans: [
+        "ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif",
+      ],
     },
     extend: {
       colors: {
@@ -15,8 +17,11 @@ module.exports = {
         "custom-500": "#F7FFFF",
         "custom-600": "#054c72",
         "custom-700": "#75467c",
+        "custom-800": "#e0f2ff",
         "gradient-1": "#124591",
         "gradient-2": "#0066FF",
+        "gradient-3": "#3b82f6",
+        "gradient-4": "#06b6d4",
       },
     },
   },
