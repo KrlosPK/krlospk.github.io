@@ -1,0 +1,20 @@
+[
+  {
+    "alt": "Desktop preview from SwiftLink project",
+    "description": "SwiftLink es una aplicación de acortamiento de URLs que te permite generar enlaces cortos y fáciles de compartir. Con un diseño responsive y amigable para el usuario.",
+    "repo": "https://github.com/KrlosPK/url-shortening-app",
+    "src": "./assets/images/swiftlink.webp",
+    "technologies": ["Angular", "TailwindCSS", "TypeScript"],
+    "title": "SwiftLink",
+    "url": "https://swiftlink.netlify.app/"
+  },
+  {
+    "alt": "Desktop preview from TextCrypter project",
+    "description": "Te permite encriptar y descifrar texto de manera segura y sencilla. Utilizando algoritmos de encriptación confiables. Tu información estára segura con nosotros.",
+    "repo": "https://github.com/KrlosPK/encriptador-texto-ONE",
+    "src": "./assets/images/textcrypt.webp",
+    "technologies": ["JavaScript", "CSS", "HTML"],
+    "title": "TextCrypter",
+    "url": "https://krlospk.github.io/encriptador-texto-ONE/"
+  }
+]

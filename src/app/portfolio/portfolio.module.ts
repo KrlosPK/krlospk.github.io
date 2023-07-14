@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SharedModule } from '../shared/shared.module';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SharedModule } from '../shared/shared.module';
     HomeComponent,
     ProjectsComponent,
     SkillsComponent,
+    ProjectCardComponent,
   ],
   imports: [CommonModule, SharedModule],
   exports: [
