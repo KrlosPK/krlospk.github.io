@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Education } from '../../types/types.d';
+import { Education } from '../../types/portfolio-types';
 
 @Component({
   selector: 'portfolio-education',

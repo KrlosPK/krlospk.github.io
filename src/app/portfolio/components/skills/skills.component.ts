@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Skills } from '../../types/types.d';
+import { Skills } from '../../types/portfolio-types';
 
 @Component({
   selector: 'portfolio-skills',
