@@ -13,3 +13,13 @@ export interface Education {
   timeDifference?: string;
   title: string;
 }
+
+export interface Projects {
+  alt: string;
+  description: string;
+  repo: string;
+  src: string;
+  technologies: string[];
+  title: string;
+  url: string;
+}
