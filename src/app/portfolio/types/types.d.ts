@@ -6,9 +6,10 @@ export interface Skills {
 
 export interface Education {
   duration?: string;
-  endDate: string;
+  endDate?: string;
+  href?: string;
   initialDate: string;
   institute: string;
-  timeDifference: string;
+  timeDifference?: string;
   title: string;
 }
