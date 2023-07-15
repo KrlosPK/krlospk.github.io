@@ -8,7 +8,7 @@
     <img
       [alt]="project.alt"
       [src]="project.src"
-      class="transition-transform"
+      class="object-cover transition-transform h-60"
       height="320"
       loading="lazy"
       width="320"
@@ -20,7 +20,7 @@
   <ul class="flex flex-wrap gap-2">
     <li
       *ngFor="let technology of project.technologies"
-      class="px-2 py-1 text-black bg-blue-100 rounded-3xl"
+      class="px-2 py-1 text-sm text-black bg-blue-100 rounded-3xl"
     >
       {{ technology }}
     </li>
