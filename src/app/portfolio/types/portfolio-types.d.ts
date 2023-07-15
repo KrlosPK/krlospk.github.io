@@ -10,7 +10,6 @@ export interface Education {
   href?: string;
   initialDate: string;
   institute: string;
-  timeDifference?: string;
   title: string;
 }
 

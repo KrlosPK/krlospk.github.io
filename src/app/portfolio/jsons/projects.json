@@ -1,6 +1,6 @@
 [
   {
-    "alt": "Desktop preview from SwiftLink project",
+    "alt": "Desktop preview for SwiftLink project",
     "description": "SwiftLink es una aplicación de acortamiento de URLs que te permite generar enlaces cortos y fáciles de compartir. Con un diseño responsive y amigable para el usuario.",
     "repo": "https://github.com/KrlosPK/url-shortening-app",
     "src": "./assets/images/swiftlink.webp",
@@ -9,12 +9,48 @@
     "url": "https://swiftlink.netlify.app/"
   },
   {
-    "alt": "Desktop preview from TextCrypter project",
-    "description": "Te permite encriptar y descifrar texto de manera segura y sencilla. Utilizando algoritmos de encriptación confiables. Tu información estára segura con nosotros.",
+    "alt": "Desktop preview for Webfam project",
+    "description": "WebFAM: Aplicativo web de comercio electrónico para FADEMET Montajes S.A.S. Simplifica citas, servicios y productos. ¡Mejora tu experiencia virtual!",
+    "repo": "https://github.com/KrlosPK/WebFAM",
+    "src": "./assets/images/webfam.webp",
+    "technologies": ["React", "JavaScript", "Firebase", "MySQL"],
+    "title": "WebFAM",
+    "url": "https://fademetmontajes.netlify.app"
+  },
+  {
+    "alt": "Desktop preview for My Music App",
+    "description": "Listado de tus canciones favoritas consumiendo el API de Spotify. ¡Experimenta la emoción de organizar y disfrutar tu música como nunca antes!",
+    "repo": "https://github.com/KrlosPK/my-music-app",
+    "src": "./assets/images/music_app.webp",
+    "technologies": ["React", "JavaScript", "CSS", "BEM"],
+    "title": "My Music App",
+    "url": "https://krlospk.github.io/my-music-app/"
+  },
+  {
+    "alt": "Desktop preview for TextCrypter project",
+    "description": "Te permite encriptar y descifrar texto de manera segura y sencilla. Utilizando algoritmos de encriptación confiables. Tu información estará segura con nosotros.",
     "repo": "https://github.com/KrlosPK/encriptador-texto-ONE",
     "src": "./assets/images/textcrypt.webp",
     "technologies": ["JavaScript", "CSS", "HTML"],
     "title": "TextCrypter",
     "url": "https://krlospk.github.io/encriptador-texto-ONE/"
+  },
+  {
+    "alt": "Desktop preview for RPS Showdown game",
+    "description": "Juego de Piedra, Papel o Tijera desarrollado en JavaScript, CSS y HTML. Sumérgete en la nostalgia de este clásico juego de manos mientras compites contra la computadora.",
+    "repo": "https://github.com/KrlosPK/piedra-papel-tijera-js",
+    "src": "./assets/images/rps-game.webp",
+    "technologies": ["JavaScript", "CSS", "HTML"],
+    "title": "RPS Showdown",
+    "url": "https://krlospk.github.io/piedra-papel-tijera-js/"
+  },
+  {
+    "alt": "Desktop preview for Memory Game",
+    "description": "¡Desafía tu mente con Match Mastermind, un emocionante juego de memoria! Voltea las cartas para encontrar parejas iguales y demuestra tu habilidad para recordar su ubicación. Con gráficos cautivadores, este juego te mantendrá entretenido y entrenando tu memoria.",
+    "repo": "https://github.com/KrlosPK/memory-game",
+    "src": "./assets/images/memory_game.webp",
+    "technologies": ["JavaScript", "HTML", "CSS"],
+    "title": "Match Mastermind",
+    "url": "https://krlospk.github.io/memory-game/"
   }
 ]
