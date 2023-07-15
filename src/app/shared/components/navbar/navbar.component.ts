@@ -5,7 +5,7 @@ import { Component, HostListener } from '@angular/core';
   templateUrl: './navbar.component.html',
   styles: [
     `
-      .fixed {
+      .portfolio-fixed {
         box-shadow: #f7ffffa1 0px 1px 10px 0px;
         position: fixed;
       }
@@ -20,7 +20,7 @@ export class NavbarComponent {
   onWindowScroll() {
     const header = document.querySelector('header');
     this.fixed = window.scrollY > 0;
-    header?.classList.toggle('fixed', this.fixed);
+    header?.classList.toggle('portfolio-fixed', this.fixed);
   }
 
   toggle(): void {
