@@ -10,7 +10,7 @@
   },
   {
     "alt": "Desktop preview from TextCrypter project",
-    "description": "Te permite encriptar y descifrar texto de manera segura y sencilla. Utilizando algoritmos de encriptación confiables. Tu información estára segura con nosotros.",
+    "description": "Te permite encriptar y descifrar texto de manera segura y sencilla. Utilizando algoritmos de encriptación confiables. Tu información estará segura con nosotros.",
     "repo": "https://github.com/KrlosPK/encriptador-texto-ONE",
     "src": "./assets/images/textcrypt.webp",
     "technologies": ["JavaScript", "CSS", "HTML"],
