@@ -1,14 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import Aos from 'aos';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent {
-  constructor() {
+export class AppComponent implements OnInit {
+  constructor() {}
+  ngOnInit(): void {
     Aos.init({
       duration: 700,
+    });
+
+    window.addEventListener('load', () => {
+      Aos.refresh();
     });
   }
 }
