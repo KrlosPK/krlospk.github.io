@@ -5,3 +5,9 @@ export type Link = {
   styles: string;
   text: string;
 };
+
+export type NavItems = {
+  href: string;
+  styles?: string;
+  text: string;
+};

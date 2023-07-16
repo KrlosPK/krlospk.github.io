@@ -1,0 +1,23 @@
+[
+  {
+    "href": "#",
+    "text": "Carlos Dev"
+  },
+  {
+    "href": "#projects",
+    "styles": "ml-auto",
+    "text": "Proyectos"
+  },
+  {
+    "href": "#education",
+    "text": "Educación"
+  },
+  {
+    "href": "#skills",
+    "text": "Habilidades"
+  },
+  {
+    "href": "#contact-me",
+    "text": "Contacto"
+  }
+]
