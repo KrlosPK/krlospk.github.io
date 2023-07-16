@@ -1,6 +1,6 @@
 {
   "name": "personal-portfolio",
-  "version": "0.7.15",
+  "version": "0.7.16",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
