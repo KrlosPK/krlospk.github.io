@@ -6,14 +6,18 @@
     <!-- ! Desktop Nav -->
     <ul class="items-center hidden max-w-6xl gap-4 py-2 mx-auto md:flex">
       <li *ngFor="let link of links" [ngClass]="link.styles">
-        <shared-nav-item [href]="link.href" [text]="link.text" />
+        <shared-nav-item
+          [href]="link.href"
+          [img]="link.img"
+          [text]="link.text"
+        />
       </li>
     </ul>
 
     <!-- ! Responsive Nav -->
     <ul class="relative flex items-center py-2 md:hidden">
       <li>
-        <shared-nav-item href="#" text="Carlos Dev" />
+        <shared-nav-item href="#" [img]="true" />
       </li>
 
       <li class="flex ml-auto select-none">

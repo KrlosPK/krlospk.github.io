@@ -9,7 +9,9 @@ export class NavbarItemComponent {
   @Input()
   public href: string = '';
   @Input()
-  public text: string = '';
+  public text?: string = '';
+  @Input()
+  public img?: boolean = false;
   @Input()
   public tabindex: boolean = true;
   @Output()

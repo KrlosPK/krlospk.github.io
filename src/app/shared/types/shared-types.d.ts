@@ -8,6 +8,7 @@ export type Link = {
 
 export type NavItems = {
   href: string;
+  img?: boolean;
   styles?: string;
-  text: string;
+  text?: string;
 };
