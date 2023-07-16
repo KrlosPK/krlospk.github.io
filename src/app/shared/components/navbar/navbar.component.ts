@@ -1,5 +1,9 @@
 import { Component, HostListener } from '@angular/core';
 
+import { NavItems } from '../../types/shared-types';
+
+import links from '../../jsons/nav-items.json';
+
 @Component({
   selector: 'shared-navbar',
   templateUrl: './navbar.component.html',
@@ -13,8 +17,9 @@ import { Component, HostListener } from '@angular/core';
   ],
 })
 export class NavbarComponent {
-  public isResponsiveNav: boolean = false;
   public fixed: boolean = false;
+  public isResponsiveNav: boolean = false;
+  public links: NavItems[] = links;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

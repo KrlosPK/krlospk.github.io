@@ -1,0 +1,55 @@
+<div class="flex flex-col items-center">
+  <h2 class="mb-10 text-4xl font-bold text-center">{{ text }}</h2>
+
+  <ol class="relative border-l border-slate-400">
+    <li *ngFor="let item of itemsList" class="mb-10 ml-4" data-aos="fade-up">
+      <div
+        class="absolute w-3 h-3 rounded-full mt-2 -left-[1.4rem] border border-gray-900 bg-white"
+      ></div>
+
+      <time class="mb-1 text-sm font-medium text-custom-800">
+        {{ item.initialDate }}
+        {{ item.endDate ? "- " + item.endDate : "" }}
+      </time>
+
+      <h3 class="mb-1 text-lg font-semibold">
+        {{ item.title }}
+      </h3>
+
+      <p class="text-base text-custom-800 text-balance max-w-[75ch]">
+        {{ item.institute || item.company }}
+      </p>
+
+      <p *ngIf="item.duration">
+        Duración:
+        {{ item.duration }}
+      </p>
+
+      <a
+        [href]="item.href"
+        *ngIf="item.href"
+        class="inline-flex items-center px-4 py-2 mt-4 text-sm font-medium text-black transition-colors rounded-lg bg-slate-200 hover:bg-white"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="Abrir certificado"
+      >
+        Certificado
+        <svg
+          aria-hidden="true"
+          class="w-3 h-3 ml-2"
+          fill="currentColor"
+          viewBox="0 0 14 10"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 5h12m0 0L9 1m4 4L9 9"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            stroke="currentColor"
+          ></path>
+        </svg>
+      </a>
+    </li>
+  </ol>
+</div>

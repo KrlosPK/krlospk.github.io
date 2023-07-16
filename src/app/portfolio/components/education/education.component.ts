@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
-import { Education } from '../../types/portfolio-types';
+import { Education, Experience } from '../../types/portfolio-types';
 
-import educationList from '../../jsons/educationList.json';
+import educationList from '../../jsons/education-list.json';
+import experienceList from '../../jsons/experience-list.json';
 
 @Component({
   selector: 'portfolio-education',
@@ -11,4 +12,5 @@ import educationList from '../../jsons/educationList.json';
 })
 export class EducationComponent {
   public educationList: Education[] = educationList;
+  public experienceList: Experience[] = experienceList;
 }
