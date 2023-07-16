@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { TimeLineComponent } from '../standalone/time-line/time-line.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     ProjectsComponent,
     SkillsComponent,
   ],
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, SharedModule, TimeLineComponent],
   exports: [
     ContactMeComponent,
     EducationComponent,
