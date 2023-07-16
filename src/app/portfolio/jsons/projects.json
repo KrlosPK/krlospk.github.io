@@ -46,7 +46,7 @@
   },
   {
     "alt": "Desktop preview for Memory Game",
-    "description": "¡Desafía tu mente con Match Mastermind, un emocionante juego de memoria! Voltea las cartas para encontrar parejas iguales y demuestra tu habilidad para recordar su ubicación. Con gráficos cautivadores, este juego te mantendrá entretenido y entrenando tu memoria.",
+    "description": "¡Desafía tu mente con Match Mastermind, un emocionante juego de memoria! Voltea las cartas para encontrar parejas iguales en tiempo récord.",
     "repo": "https://github.com/KrlosPK/memory-game",
     "src": "./assets/images/memory_game.webp",
     "technologies": ["JavaScript", "HTML", "CSS"],

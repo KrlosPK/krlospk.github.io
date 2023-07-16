@@ -24,7 +24,7 @@ export class ButtonsComponent {
       text: 'LinkedIn',
     },
     {
-      alt: 'Logo de LinkedIn',
+      alt: 'Logo de GitHub',
       href: 'https://github.com/KrlosPK',
       img: './assets/logotypes/github.svg',
       styles: 'bg-gray-700 [&>img]:invert hover:bg-gray-800',
