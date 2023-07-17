@@ -1,0 +1,23 @@
+<ul class="flex flex-wrap items-center justify-center gap-4 mb-10">
+  <li>
+    <button
+      (click)="clearFilter()"
+      [class.active]="activeTech === ''"
+      class="p-2 text-sm font-semibold bg-gray-700 rounded-full"
+      type="button"
+    >
+      Todos ({{ technologies.length }})
+    </button>
+  </li>
+
+  <li *ngFor="let tech of technologies">
+    <button
+      (click)="filter(tech.name)"
+      [class.active]="activeTech === tech.name"
+      class="p-2 text-sm font-semibold bg-gray-700 rounded-full"
+      type="button"
+    >
+      {{ tech.name }} ({{ tech.count }})
+    </button>
+  </li>
+</ul>

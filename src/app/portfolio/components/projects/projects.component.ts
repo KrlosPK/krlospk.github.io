@@ -11,4 +11,9 @@ import projects from '../../jsons/projects.json';
 })
 export class ProjectsComponent {
   public projects: Projects[] = projects;
+  public filteredProjects: Projects[] = projects;
+
+  handleFilteredItems(filteredProjects: Projects[]): void {
+    this.filteredProjects = filteredProjects;
+  }
 }

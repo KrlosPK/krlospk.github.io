@@ -6,36 +6,12 @@
   <ul
     class="flex flex-col font-semibold text-center border-2 rounded-md bg-custom-50 border-custom-400"
   >
-    <li>
+    <li *ngFor="let item of navItems">
       <shared-nav-item
         (isCollapsed)="handleCollapse($event)"
+        [href]="item.href"
         [tabindex]="isCollapsed"
-        href="#projects"
-        text="Proyectos"
-      />
-    </li>
-    <li>
-      <shared-nav-item
-        (isCollapsed)="handleCollapse($event)"
-        [tabindex]="isCollapsed"
-        href="#education"
-        text="Educación"
-      />
-    </li>
-    <li>
-      <shared-nav-item
-        (isCollapsed)="handleCollapse($event)"
-        [tabindex]="isCollapsed"
-        href="#skills"
-        text="Habilidades"
-      />
-    </li>
-    <li>
-      <shared-nav-item
-        (isCollapsed)="handleCollapse($event)"
-        [tabindex]="isCollapsed"
-        href="#contact-me"
-        text="Contacto"
+        [text]="item.text"
       />
     </li>
   </ul>

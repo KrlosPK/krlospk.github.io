@@ -1,5 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
+import { NavItems } from '../../types/shared-types';
+
+import navItems from '../../jsons/nav-items.json';
+
 @Component({
   selector: 'shared-responsive-navbar',
   templateUrl: './responsive-navbar.component.html',
@@ -10,6 +14,8 @@ export class ResponsiveNavbarComponent {
   public isCollapsed: boolean = false;
   @Output()
   public isCollapsedChange: EventEmitter<boolean> = new EventEmitter();
+
+  public navItems: NavItems[] = navItems.filter((item) => item.href !== '#');
 
   handleCollapse(event: boolean): void {
     this.isCollapsed = event;
