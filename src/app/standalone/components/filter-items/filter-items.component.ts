@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 import { Projects } from 'src/app/portfolio/types/portfolio-types';
+import { TechnologyWithCount } from '../../types/standalone-types';
 
 @Component({
   selector: 'standalone-filter-items',
@@ -11,7 +12,7 @@ import { Projects } from 'src/app/portfolio/types/portfolio-types';
   styles: [
     `
       .active {
-        background-color: rgb(55, 65, 81);
+        background-color: rgb(31, 41, 55);
       }
     `,
   ],
@@ -22,7 +23,7 @@ export class FilterItemsComponent implements OnInit {
   @Output()
   public itemsFiltered = new EventEmitter<Projects[]>();
 
-  public technologies: string[] = [];
+  public technologies: TechnologyWithCount[] = [];
   public activeTech: string = '';
 
   public originalItems: Projects[] = [];
@@ -48,14 +49,23 @@ export class FilterItemsComponent implements OnInit {
   }
 
   extractTechnologies(): void {
-    const uniqueTechnologies = new Set<string>();
+    const technologyCountMap = new Map<string, number>();
 
     this.items.forEach((item) => {
-      item.technologies.forEach((tech) => uniqueTechnologies.add(tech));
+      item.technologies.forEach((tech) => {
+        const count = technologyCountMap.get(tech) || 0;
+
+        technologyCountMap.set(tech, count + 1);
+      });
     });
 
-    const sortedTechnologies = Array.from(uniqueTechnologies).sort();
+    this.technologies = Array.from(technologyCountMap.entries()).map(
+      ([name, count]) => ({
+        name,
+        count,
+      })
+    );
 
-    this.technologies = Array.from(sortedTechnologies);
+    this.technologies.sort((a, b) => a.name.localeCompare(b.name));
   }
 }

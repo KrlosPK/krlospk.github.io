@@ -2,21 +2,22 @@
   <li>
     <button
       (click)="clearFilter()"
-      class="px-3 py-2 text-sm bg-gray-500 rounded-full"
-      type="button"
       [class.active]="activeTech === ''"
+      class="p-2 text-sm font-semibold bg-gray-700 rounded-full"
+      type="button"
     >
-      Todos
+      Todos ({{ technologies.length }})
     </button>
   </li>
+
   <li *ngFor="let tech of technologies">
     <button
-      (click)="filter(tech)"
-      class="px-3 py-2 text-sm bg-gray-500 rounded-full"
+      (click)="filter(tech.name)"
+      [class.active]="activeTech === tech.name"
+      class="p-2 text-sm font-semibold bg-gray-700 rounded-full"
       type="button"
-      [class.active]="activeTech === tech"
     >
-      {{ tech }}
+      {{ tech.name }} ({{ tech.count }})
     </button>
   </li>
 </ul>
