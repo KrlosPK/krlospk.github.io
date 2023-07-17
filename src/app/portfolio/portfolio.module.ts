@@ -5,12 +5,13 @@ import { SharedModule } from '../shared/shared.module';
 
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { EducationComponent } from './components/education/education.component';
+import { FilterItemsComponent } from '../standalone/components/filter-items/filter-items.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { TimeLineComponent } from '../standalone/time-line/time-line.component';
+import { TimeLineComponent } from '../standalone/components/time-line/time-line.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,12 @@ import { TimeLineComponent } from '../standalone/time-line/time-line.component';
     ProjectsComponent,
     SkillsComponent,
   ],
-  imports: [CommonModule, SharedModule, TimeLineComponent],
+  imports: [
+    CommonModule,
+    FilterItemsComponent,
+    SharedModule,
+    TimeLineComponent,
+  ],
   exports: [
     ContactMeComponent,
     EducationComponent,

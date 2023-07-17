@@ -1,7 +1,13 @@
 <h2 class="mb-10 text-4xl font-bold text-center text-custom-800">Proyectos</h2>
+
+<standalone-filter-items
+  (itemsFiltered)="handleFilteredItems($event)"
+  [items]="projects"
+/>
+
 <section class="flex flex-wrap items-center gap-6 justify-evenly">
   <portfolio-project-card
-    *ngFor="let project of projects"
+    *ngFor="let project of filteredProjects"
     [project]="project"
   />
 </section>
