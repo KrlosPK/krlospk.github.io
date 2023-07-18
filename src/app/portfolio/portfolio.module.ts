@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { EducationComponent } from './components/education/education.component';
 import { FilterItemsComponent } from '../standalone/components/filter-items/filter-items.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -15,7 +14,6 @@ import { TimeLineComponent } from '../standalone/components/time-line/time-line.
 
 @NgModule({
   declarations: [
-    ContactMeComponent,
     EducationComponent,
     FooterComponent,
     HomeComponent,
@@ -30,7 +28,6 @@ import { TimeLineComponent } from '../standalone/components/time-line/time-line.
     TimeLineComponent,
   ],
   exports: [
-    ContactMeComponent,
     EducationComponent,
     FooterComponent,
     HomeComponent,
