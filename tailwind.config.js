@@ -18,6 +18,7 @@ module.exports = {
         "custom-600": "#054c72",
         "custom-700": "#75467c",
         "custom-800": "#e0f2ff",
+        "custom-900": "#132130cc",
         "gradient-1": "#124591",
         "gradient-2": "#0066FF",
         "gradient-3": "#3b82f6",
