@@ -23,8 +23,8 @@
     "repo": "https://github.com/KrlosPK/my-music-app",
     "src": "./assets/images/music_app.webp",
     "technologies": ["React", "JavaScript", "CSS", "BEM"],
-    "title": "My Music App",
-    "url": "https://krlospk.github.io/my-music-app/"
+    "title": "Playlist Genius",
+    "url": "https://playlistgenius.netlify.app/"
   },
   {
     "alt": "Desktop preview for TextCrypter project",
