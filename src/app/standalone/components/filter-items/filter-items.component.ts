@@ -66,6 +66,6 @@ export class FilterItemsComponent implements OnInit {
       })
     );
 
-    this.technologies.sort((a, b) => a.name.localeCompare(b.name));
+    this.technologies.sort((a, b) => b.count - a.count);
   }
 }
