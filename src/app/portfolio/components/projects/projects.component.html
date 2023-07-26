@@ -9,7 +9,15 @@
 
 <section class="flex flex-wrap items-center gap-6 justify-evenly">
   <portfolio-project-card
-    *ngFor="let project of filteredProjects"
+    *ngFor="let project of visibleProjects"
     [project]="project"
   />
 </section>
+
+<button
+  (click)="showMoreProjects()"
+  *ngIf="showMoreButtonVisible"
+  class="flex items-center gap-2 px-4 py-2 mx-auto mt-16 text-white transition-colors bg-gray-700 rounded-lg hover:bg-gray-800"
+>
+  Ver más...
+</button>
