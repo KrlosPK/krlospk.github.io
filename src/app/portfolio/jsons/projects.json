@@ -36,6 +36,15 @@
     "url": "https://krlospk.github.io/encriptador-texto-ONE/"
   },
   {
+    "alt": "Desktop preview for Books List project",
+    "description": "Enlista tus libros favoritos, guárdalos en tu lista de lectura y mejora tus búsquedas con filtros inteligentes. ¡Descubre una experiencia de lectura más eficiente!",
+    "repo": "https://github.com/KrlosPK/pruebas-tecnicas/tree/main/pruebas/01-reading-list/KrlosPK",
+    "src": "./assets/images/books_list.webp",
+    "technologies": ["Angular", "TailwindCSS", "Unit Testing"],
+    "title": "BooksList",
+    "url": "https://bookslist-app.vercel.app/library"
+  },
+  {
     "alt": "Desktop preview for RPS Showdown game",
     "description": "Juego de Piedra, Papel o Tijera desarrollado en JavaScript, CSS y HTML. Sumérgete en la nostalgia de este clásico juego de manos mientras compites contra la computadora.",
     "repo": "https://github.com/KrlosPK/piedra-papel-tijera-js",
