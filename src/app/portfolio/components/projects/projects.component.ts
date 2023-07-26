@@ -12,8 +12,26 @@ import projects from '../../jsons/projects.json';
 export class ProjectsComponent {
   public projects: Projects[] = projects;
   public filteredProjects: Projects[] = projects;
+  public visibleProjects: Projects[] = projects.slice(0, 6);
+  public showMoreButtonVisible: boolean = true;
 
   handleFilteredItems(filteredProjects: Projects[]): void {
-    this.filteredProjects = filteredProjects;
+    this.visibleProjects = filteredProjects;
+    this.showMoreProjects();
+  }
+
+  showMoreProjects(): void {
+    const remainingItemsToShow = 3;
+
+    const remainingProjects = this.filteredProjects.slice(
+      this.visibleProjects.length
+    );
+
+    this.visibleProjects = this.visibleProjects.concat(
+      remainingProjects.slice(0, remainingItemsToShow)
+    );
+
+    this.showMoreButtonVisible =
+      remainingProjects.length > remainingItemsToShow;
   }
 }
