@@ -3,10 +3,11 @@
     <button
       (click)="clearFilter()"
       [class.active]="activeTech === ''"
+      [class.translate]="activeTech !== ''"
       class="p-2 text-sm font-semibold bg-gray-700 rounded-full"
       type="button"
     >
-      Todos ({{ technologies.length }})
+      Todos ({{ items.length }})
     </button>
   </li>
 
@@ -14,6 +15,7 @@
     <button
       (click)="filter(tech.name)"
       [class.active]="activeTech === tech.name"
+      [class.translate]="activeTech !== tech.name"
       class="p-2 text-sm font-semibold bg-gray-700 rounded-full"
       type="button"
     >

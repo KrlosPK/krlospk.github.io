@@ -14,6 +14,12 @@ import { TechnologyWithCount } from '../../types/standalone-types';
       .active {
         background-color: rgb(31, 41, 55);
       }
+      .translate {
+        transition: translate 200ms ease-in-out;
+      }
+      .translate:hover {
+        translate: 0 -4px;
+      }
     `,
   ],
 })
