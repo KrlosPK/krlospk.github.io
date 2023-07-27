@@ -17,7 +17,6 @@ export class ProjectsComponent {
 
   handleFilteredItems(filteredProjects: Projects[]): void {
     this.visibleProjects = filteredProjects;
-    this.showMoreProjects();
   }
 
   showMoreProjects(): void {
