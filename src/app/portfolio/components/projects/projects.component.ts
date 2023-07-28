@@ -14,9 +14,19 @@ export class ProjectsComponent {
   public filteredProjects: Projects[] = projects;
   public visibleProjects: Projects[] = projects.slice(0, 6);
   public showMoreButtonVisible: boolean = true;
+  public isAllFilter: boolean = true;
 
   handleFilteredItems(filteredProjects: Projects[]): void {
     this.visibleProjects = filteredProjects;
+  }
+
+  handleIsAllFilter(isAllFilter: boolean): void {
+    this.isAllFilter = isAllFilter;
+
+    if (isAllFilter) {
+      this.visibleProjects = projects.slice(0, 6);
+      this.showMoreButtonVisible = true;
+    }
   }
 
   showMoreProjects(): void {
