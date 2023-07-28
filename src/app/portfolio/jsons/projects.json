@@ -40,7 +40,7 @@
     "description": "Enlista tus libros favoritos, guárdalos en tu lista de lectura y mejora tus búsquedas con filtros inteligentes. ¡Descubre una experiencia de lectura más eficiente!",
     "repo": "https://github.com/KrlosPK/pruebas-tecnicas/tree/main/pruebas/01-reading-list/KrlosPK",
     "src": "./assets/images/books_list.webp",
-    "technologies": ["Angular", "TailwindCSS", "Unit Testing"],
+    "technologies": ["Angular", "TailwindCSS", "Testing"],
     "title": "BooksList",
     "url": "https://bookslist-app.vercel.app/library"
   },

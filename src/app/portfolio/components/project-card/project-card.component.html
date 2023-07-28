@@ -21,8 +21,14 @@
   <ul class="flex flex-wrap gap-2">
     <li
       *ngFor="let technology of project.technologies"
-      class="px-2 py-1 text-sm text-black bg-blue-100 rounded-lg"
+      class="flex items-center gap-1 px-2 py-1 text-sm font-semibold text-black bg-blue-100 rounded-lg"
     >
+      <img
+        alt="{{ technology }} icon"
+        height="24"
+        src="./assets/icons/{{ technology.toLowerCase() }}.svg"
+        width="24"
+      />
       {{ technology }}
     </li>
   </ul>
