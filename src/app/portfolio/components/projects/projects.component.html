@@ -3,20 +3,21 @@
 </h2>
 
 <standalone-filter-items
+  (isAllFilter)="handleIsAllFilter($event)"
   (itemsFiltered)="handleFilteredItems($event)"
   [items]="projects"
 />
 
 <section class="flex flex-wrap items-center gap-6 justify-evenly">
   <portfolio-project-card
-    *ngFor="let project of visibleProjects"
     [project]="project"
+    *ngFor="let project of visibleProjects"
   />
 </section>
 
 <button
   (click)="showMoreProjects()"
-  *ngIf="showMoreButtonVisible"
+  *ngIf="showMoreButtonVisible && isAllFilter"
   class="flex items-center gap-2 px-4 py-2 mx-auto mt-16 text-white transition-colors bg-gray-700 rounded-lg hover:bg-gray-800"
 >
   Ver más...

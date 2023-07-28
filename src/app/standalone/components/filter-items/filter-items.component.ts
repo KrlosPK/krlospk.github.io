@@ -13,6 +13,8 @@ import { TechnologyWithCount } from '../../types/standalone-types';
     `
       .active {
         background-color: rgb(31, 41, 55);
+        cursor: default;
+        pointer-events: none;
       }
       .translate {
         transition: translate 200ms ease-in-out;
@@ -28,6 +30,8 @@ export class FilterItemsComponent implements OnInit {
   public items: Projects[] = [];
   @Output()
   public itemsFiltered = new EventEmitter<Projects[]>();
+  @Output()
+  public isAllFilter = new EventEmitter<boolean>();
 
   public technologies: TechnologyWithCount[] = [];
   public activeTech: string = '';
@@ -46,12 +50,15 @@ export class FilterItemsComponent implements OnInit {
       return item.technologies.includes(this.activeTech);
     });
 
+    this.isAllFilter.emit(false);
     this.itemsFiltered.emit(filteredItems);
   }
 
   clearFilter(): void {
     this.activeTech = '';
+
     this.itemsFiltered.emit(this.originalItems);
+    this.isAllFilter.emit(true);
   }
 
   extractTechnologies(): void {
