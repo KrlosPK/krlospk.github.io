@@ -1,7 +1,13 @@
 [
   {
     "company": "Pragma S.A.",
-    "endDate": "Actualidad",
+    "endDate": "Octubre 2023",
+    "initialDate": "Mayo 2023",
+    "title": "Desarrollador de Software"
+  },
+  {
+    "company": "Pragma S.A.",
+    "endDate": "Abril 2023",
     "initialDate": "Julio 2022",
     "title": "Aprendiz de Desarrollo de Software"
   },

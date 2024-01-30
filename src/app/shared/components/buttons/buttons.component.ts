@@ -10,11 +10,11 @@ import { type Link } from 'src/app/shared/types/shared-types';
 export class ButtonsComponent {
   public links: Link[] = [
     {
-      alt: 'Enlace para mi curriculum',
-      href: 'https://krlospk.github.io/assets/documents/HV_CARLOS_EDUARDO_MORALES_ESTRADA.pdf',
+      alt: 'Enlace para mi currículum',
+      href: 'https://docs.google.com/document/d/1FPNx2X3RcYCzuwA71J-oGHamBv35bKGn8X22R8JNpOU/edit',
       img: './assets/logotypes/link.svg',
       styles: 'bg-custom-200 hover:bg-custom-700',
-      text: 'Curriculum',
+      text: 'Currículum',
     },
     {
       alt: 'Logo de LinkedIn',
