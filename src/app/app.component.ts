@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     Aos.init({
       duration: 700,
+      once: true,
     });
 
     window.addEventListener('load', () => {
