@@ -1,20 +1,16 @@
 [
   {
+    "company": "Cesde",
+    "endDate": "Actualidad",
+    "initialDate": "Mayo 2024",
+    "showTime": true,
+    "title": "Desarrollador de Software FullStack"
+  },
+  {
     "company": "Pragma S.A.",
     "endDate": "Octubre 2023",
-    "initialDate": "Mayo 2023",
-    "title": "Desarrollador de Software"
-  },
-  {
-    "company": "Pragma S.A.",
-    "endDate": "Abril 2023",
-    "initialDate": "Julio 2022",
-    "title": "Aprendiz de Desarrollo de Software"
-  },
-  {
-    "company": "Freelance",
-    "endDate": "Junio 2022",
-    "initialDate": "Julio 2021",
-    "title": "Desarrollo Web Frontend"
+    "initialDate": "Mayo 2021",
+    "showTime": true,
+    "title": "Desarrollador de Software Frontend"
   }
 ]
