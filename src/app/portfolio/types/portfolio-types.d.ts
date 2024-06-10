@@ -13,15 +13,15 @@ export interface Education {
 }
 
 export interface Experience {
-  duration?: string;
   endDate?: string;
   initialDate: string;
+  showTime?: boolean;
   title: string;
 }
 
 export interface EducationExperience extends Education, Experience {
-  institute?: string;
   company?: string;
+  institute?: string;
 }
 
 export interface Projects {

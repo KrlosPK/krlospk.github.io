@@ -10,6 +10,12 @@
       <time class="mb-1 text-sm font-medium text-custom-800">
         {{ item.initialDate }}
         {{ item.endDate ? "- " + item.endDate : "" }}
+        {{
+          item.showTime &&
+            item.initialDate &&
+            item.endDate &&
+            "(" + calculateDuration(item.initialDate, item.endDate) + ")"
+        }}
       </time>
 
       <h3 class="max-w-[290.1px] md:max-w-none mb-1 text-lg font-semibold">
