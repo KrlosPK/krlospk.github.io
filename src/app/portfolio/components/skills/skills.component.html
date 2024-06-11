@@ -3,23 +3,31 @@
     Herramientas
   </h2>
 
-  <ul
-    class="grid max-w-2xl grid-cols-2 gap-4 mx-auto md:grid-cols-4 justify-items-center lg:max-w-full"
-  >
-    <li
-      *ngFor="let skill of skills"
-      class="grid grid-cols-1 gap-2 font-bold text-center justify-items-center"
-      data-aos="fade-right"
+  <div class="relative overflow-hidden" id="skillsContainer">
+    <ul
+      id="skillsList"
+      [ngStyle]="{
+        width: 'calc(144px * ' + skills.length + ')',
+        '--translateX': 'calc(-144px * ' + skills.length / 2 + ')'
+      }"
     >
-      <img
-        [alt]="skill.alt"
-        [src]="skill.img"
-        class="transition-transform duration-300"
-        height="64"
-        loading="lazy"
-        width="64"
-      />
-      {{ skill.label }}
-    </li>
-  </ul>
+      <li
+        *ngFor="let skill of skills"
+        class="font-bold text-center w-36 shrink-0"
+        data-aos="fade-right"
+      >
+        <img
+          [alt]="skill.alt"
+          [src]="skill.img"
+          class="m-auto transition-transform duration-300"
+          height="64"
+          loading="lazy"
+          width="64"
+        />
+        <span class="block mt-2">
+          {{ skill.label }}
+        </span>
+      </li>
+    </ul>
+  </div>
 </section>

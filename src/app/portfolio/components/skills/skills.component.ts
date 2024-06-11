@@ -7,8 +7,8 @@ import skills from '../../jsons/skills.json';
 @Component({
   selector: 'portfolio-skills',
   templateUrl: './skills.component.html',
-  styles: [],
+  styleUrls: ['./skills.component.css'],
 })
 export class SkillsComponent {
-  public skills: Skills[] = skills;
+  public skills: Skills[] = [...skills, ...skills];
 }
