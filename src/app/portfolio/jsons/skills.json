@@ -38,5 +38,25 @@
     "label": "SASS",
     "img": "./assets/icons/sass.svg",
     "alt": "SASS logotype"
+  },
+  {
+    "label": "SpringBoot",
+    "img": "./assets/icons/springboot.svg",
+    "alt": "Springboot logotype"
+  },
+  {
+    "label": "Java",
+    "img": "./assets/icons/java.svg",
+    "alt": "Java logotype"
+  },
+  {
+    "label": "MongoDB",
+    "img": "./assets/icons/mongodb.svg",
+    "alt": "MongoDB logotype"
+  },
+  {
+    "label": "NodeJS",
+    "img": "./assets/icons/nodejs.svg",
+    "alt": "NodeJS logotype"
   }
 ]
