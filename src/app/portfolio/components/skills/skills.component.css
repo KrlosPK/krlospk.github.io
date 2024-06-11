@@ -1,0 +1,34 @@
+#skillsContainer::before,
+#skillsContainer::after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 8rem;
+  z-index: 10;
+}
+#skillsContainer::before {
+  background: linear-gradient(to right, #111222 0%, transparent 100%);
+  left: 0px;
+}
+#skillsContainer::after {
+  background: linear-gradient(to left, #111222 0%, transparent 100%);
+  right: 0px;
+}
+
+#skillsList {
+  display: flex;
+  animation: slide 25s linear infinite;
+}
+#skillsList:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(var(--translateX));
+  }
+}
