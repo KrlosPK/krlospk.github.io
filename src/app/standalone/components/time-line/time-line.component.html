@@ -22,7 +22,18 @@
         {{ item.title }}
       </h3>
 
-      <p class="text-base text-custom-800 text-balance max-w-[75ch]">
+      <p
+        class="flex gap-2 mt-2 items-center text-base text-custom-800 text-balance max-w-[75ch]"
+      >
+        <img
+          [src]="item.logo"
+          *ngIf="item.logo"
+          alt="{{ item.title }} image"
+          class="rounded-sm"
+          height="24"
+          width="24"
+        />
+
         {{ item.institute || item.company }}
       </p>
 

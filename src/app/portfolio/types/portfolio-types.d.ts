@@ -22,6 +22,7 @@ export interface Experience {
 export interface EducationExperience extends Education, Experience {
   company?: string;
   institute?: string;
+  logo?: string;
 }
 
 export interface Projects {

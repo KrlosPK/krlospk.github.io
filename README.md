@@ -17,7 +17,23 @@ Run `ng serve` or `npm start` for a dev server. Then go to `https://localhost:42
 
 ## Build
 
-Run `ng build` to compile the production code, then run `npm run build:github` to create the `docs` file for Github Pages. Finally, commit the `docs` folder to finish the build.
+Follow the steps below to build and deploy the project:
+
+- Build the project using the following command:
+
+```sh
+ng build
+```
+
+- Create a `docs` folder for Github Pages:
+
+```sh
+npm run build:github
+```
+
+- If you added an image, make sure it is copied to the `docs/assets` folder.
+
+- Commit the `docs` folder to your repository.
 
 ## Contributions
 
