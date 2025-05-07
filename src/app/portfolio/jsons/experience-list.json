@@ -1,8 +1,17 @@
 [
   {
-    "company": "Cesde",
+    "company": "Bancolombia",
     "endDate": "Actualidad",
+    "initialDate": "Febrero 2025",
+    "logo": "/assets/logotypes/bancolombia-logo.webp",
+    "showTime": true,
+    "title": "Desarrollador de Software Backend"
+  },
+  {
+    "company": "Cesde",
+    "endDate": "Enero 2025",
     "initialDate": "Mayo 2024",
+    "logo": "/assets/logotypes/cesde-logo.webp",
     "showTime": true,
     "title": "Desarrollador de Software FullStack"
   },
@@ -10,6 +19,7 @@
     "company": "Pragma S.A.",
     "endDate": "Octubre 2023",
     "initialDate": "Mayo 2023",
+    "logo": "/assets/logotypes/pragma-logo.webp",
     "showTime": true,
     "title": "Desarrollador de Software Frontend"
   }
