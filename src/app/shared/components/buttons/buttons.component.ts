@@ -11,7 +11,7 @@ export class ButtonsComponent {
   public links: Link[] = [
     {
       alt: 'Enlace para mi currículum',
-      href: 'https://docs.google.com/document/d/1FPNx2X3RcYCzuwA71J-oGHamBv35bKGn8X22R8JNpOU/edit',
+      href: 'https://docs.google.com/document/d/15_8WCNTCITg7zNHqPVXaDgnPyKogjd1spUzqxaa61wE/edit?usp=sharing',
       img: './assets/logotypes/link.svg',
       styles: 'bg-custom-200 hover:bg-custom-700',
       text: 'Currículum',
